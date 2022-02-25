@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <form class="calculator">
+            <label for="first-number">Enter a number <input required type="number" id="first-number"></label>
+            <label for="second-number">Enter a number <input required type="number" id="second-number"></label>
+            <label for="">Enter the operation (+,-,* or /) <input required id="operation" type="text"
+                    placeholder="enter +,-,* or /"></label>
+            <button class="button js-calculator-btn">Calculate</button>
+        </form>
+        <div class="result"></div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+
+</html>

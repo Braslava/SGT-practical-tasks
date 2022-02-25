@@ -1,0 +1,25 @@
+.grid-container {
+    padding: 20px;
+	display: grid;
+	max-width: 300px;
+	margin: 0 auto;
+    min-height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+}
+
+.calculator input {
+    display: block;
+    padding: 4px;
+    width: 100%;
+}
+
+.calculator button {
+    max-width: 200px;
+}
+

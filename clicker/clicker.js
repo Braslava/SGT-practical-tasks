@@ -11,6 +11,8 @@ const resultDisplay = document.querySelector('.result');
 
 const startGame = () => {
 	clickerButton.disabled = false;
+	let counter = 0;
+	resultDisplay.innerText = '';
 	clickerButton.addEventListener('click', () => {
 		counter++;
 		console.log(counter);
@@ -22,5 +24,4 @@ const startGame = () => {
 	}, 6000);
 };
 
-let counter = 0;
 startButton.addEventListener('click', startGame);

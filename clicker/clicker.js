@@ -10,6 +10,7 @@ const clickerButton = document.querySelector('.clicker-btn');
 const resultDisplay = document.querySelector('.result');
 
 const startGame = () => {
+	clickerButton.disabled = false;
 	clickerButton.addEventListener('click', () => {
 		counter++;
 		console.log(counter);

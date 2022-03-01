@@ -1,0 +1,16 @@
+.button-container {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	gap: 20px;
+}
+
+.clicker-btn {
+	padding: 15px 30px;
+	font-size: 24px;
+    background-color: rgb(165, 42, 58);
+}
+
+.clicker-btn:disabled {
+    background-color: grey;
+}

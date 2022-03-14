@@ -68,7 +68,7 @@ body {
 .key--reset:focus,
 .key--reset:hover {
 	cursor: pointer;
-	background-color: #a8ca57;
+	background-color: #f33b22;
 }
 
 .key--equals {

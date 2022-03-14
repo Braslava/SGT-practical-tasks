@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: rgb(83, 214, 93);
+	background: radial-gradient(
+		circle,
+		rgba(83, 214, 93, 0.636758927203694) 0%,
+		rgba(37, 83, 44, 0.23339758266587884) 100%
+	);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+.calculator {
+	padding: 15px;
+	max-width: 400px;
+	font-size: 18px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	background-color: blueviolet;
+}
+
+.result {
+    margin: 20px 0 18px 0; 
+	padding: 10px;
+	background-color: #ffffff;
+}
+
+.key-grid {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.key {
+	padding: 8px;
+	border-radius: 5px;
+	border: 2px solid rgb(131, 27, 131);
+	font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.key:focus,
+.key:hover {
+	cursor: pointer;
+	background-color: #a8ca57;
+}
+
+.key--reset {
+    background-color: #f0614e;
+}
+
+.key--reset:focus,
+.key--reset:hover {
+	cursor: pointer;
+	background-color: #a8ca57;
+}
+
+.key--equals {
+	grid-row: span 4;
+    background-color: #b5dd58;
+}

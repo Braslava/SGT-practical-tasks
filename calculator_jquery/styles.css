@@ -16,7 +16,7 @@ body {
 		rgba(83, 214, 93, 0.636758927203694) 0%,
 		rgba(37, 83, 44, 0.23339758266587884) 100%
 	);
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -36,7 +36,7 @@ body {
 }
 
 .result {
-    margin: 20px 0 18px 0; 
+	margin: 20px 0 18px 0;
 	padding: 10px;
 	background-color: #ffffff;
 }
@@ -52,26 +52,24 @@ body {
 	border-radius: 5px;
 	border: 2px solid rgb(131, 27, 131);
 	font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
-.key:focus,
 .key:hover {
 	cursor: pointer;
 	background-color: #a8ca57;
 }
 
 .key--reset {
-    background-color: #f0614e;
+	background-color: #f0614e;
 }
 
-.key--reset:focus,
 .key--reset:hover {
 	cursor: pointer;
 	background-color: #f33b22;
 }
 
 .key--equals {
-	grid-row: span 4;
-    background-color: #b5dd58;
+	grid-row: span 3;
+	background-color: #b5dd58;
 }

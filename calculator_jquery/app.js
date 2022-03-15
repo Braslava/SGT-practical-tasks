@@ -6,7 +6,6 @@ $(document).ready(function () {
 
 	updateDisplay(result);
 	$('.key').on('click', function (e) {
-		//let buttonPressed = $(this).html();
 		let buttonPressed = e.target.innerHTML;
 		console.log(buttonPressed);
 
@@ -29,13 +28,16 @@ $(document).ready(function () {
 			operation = null;
 		}
 
+		if (currentEntry === '' || !currentEntry) {
+			return;
+		}
 		updateDisplay(currentEntry);
 	});
 });
 
 function updateDisplay(value) {
 	let displayValue = value.toString();
-	$('.result').html(displayValue.substring(0, 10));
+	$('.result').html(displayValue.substring(0, 12));
 }
 
 function isNumber(value) {
@@ -43,7 +45,7 @@ function isNumber(value) {
 }
 
 function isOperator(value) {
-	return value === '/' || value === '*' || value === '+' || value === '-';
+	return value === '÷' || value === '*' || value === '+' || value === '-';
 }
 
 function operate(a, b, operation) {
@@ -53,8 +55,10 @@ function operate(a, b, operation) {
 	if (operation === '+') return a + b;
 	if (operation === '-') return a - b;
 	if (operation === '*') return a * b;
-	if (operation === '/') return a / b;
+	if (operation === '÷') return a / b;
 }
+
+// abither logic that somehow did not work
 
 // let num1 = '';
 // let num2 = '';
